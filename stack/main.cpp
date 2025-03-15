@@ -1,8 +1,9 @@
 // implmentation of  stack using array 
 #include"head.hpp"
+#include<cstdlib>
 int main()
 {  
-    Stack s1;
+    Stack s1;   //create the object of stack class 
 	int choice;
 	cout<<"\n wellcome to Stack data structure \n";
 	do{ 
@@ -16,11 +17,11 @@ int main()
       switch(choice)
       {
            case 1:
-           s1.Push();
+           s1.Push();   //to add elements in top of stack
            break;
 
           case 2:
-          s1.Pop();
+          s1.Pop();  // to remove elements in top of stack
           break;
 
           case 3:
