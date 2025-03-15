@@ -28,7 +28,7 @@ int main()
           s1.printStack();
           break;
           case 4:
-          cout<<s1.getTop();
+          s1.getTop();
           break;
           default:
           break;

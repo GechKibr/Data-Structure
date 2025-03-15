@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstdlib>
+
 using namespace std;
 #define max 10
 struct  Node
@@ -21,12 +21,16 @@ public:
 	bool isEmpty() const;
 	void Push();
 	void Pop();
-	int getTop() ;
+	void getTop() const;
 	void printStack();
-};int Stack::getTop() 
+};
+  void Stack::getTop() const
 {
+	cout<<"\n the top element the stack is :"<<endl;
+	cout <<" name :"<<items[top].name<<endl;
+	cout<<"ID :"<<items[top].id<<endl;
 
-	return top;
+	 
 }
 
 bool Stack::isFull() const
@@ -94,7 +98,7 @@ void Stack::printStack()
 
 
   else {
-		for(int i=0;i<size;i++)
+		for(int i=size;i<=0;i++)
 		{
 			cout<<endl<<items[i].name<<"   "<<items[i].id<<endl;
 	
