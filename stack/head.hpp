@@ -82,7 +82,7 @@ void Stack::Pop()
 	{   
 		//Node popIteam;
 		cout<<" poped element "<<endl;
-		cout<<" "<<items[size].name<<"  "<<items[size].id<<endl;
+		cout<<items[size].name<<"   "<<items[size].id<<endl;
 		top--;
 		size--;
 	}
@@ -98,7 +98,7 @@ void Stack::printStack()
 
 
   else {
-		for(int i=size;i<=0;i++)
+		for(int i=size;i<=0;i--)
 		{
 			cout<<endl<<items[i].name<<"   "<<items[i].id<<endl;
 	
