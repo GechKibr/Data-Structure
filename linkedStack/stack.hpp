@@ -3,7 +3,7 @@ using namespace std;
 struct Student {
 	string name;
 	int id;
-	Student *nextStudent;
+	Student *nextStudent;  
 	
 };
 
@@ -12,11 +12,10 @@ class LinkStack {
    Student *top =NULL;
 
    public:
-  // ~Student() { };
-   void pop();
-   void push();
+   void pop();   //to remove the top stack 
+   void push();   // to add from top of stack 
    void printStack() const;
-   void getTop() const ;
+   void getTop() const ;   // to read top of stack 
 };
 
 void LinkStack::getTop() const 
@@ -27,7 +26,7 @@ void LinkStack::getTop() const
 		cout<<"\n stack is empty "<<endl;
 	 }
 	 else
-	 {
+	 {   cout <<"\n The top element in side stack"<<endl;
 
 		cout<<"\n Name :"<<studnt->name <<"  ID :"<<studnt->id<<endl;
 	 }
@@ -48,7 +47,7 @@ void LinkStack::pop()
 void LinkStack::printStack() const
 {
 	Student *temp = new Student;  
-	temp=top;  //assign head node to new node
+	temp=top;  //assign top  node to new node
 
 	cout<<"   Name   "<<"              ID number  "<<endl;
         while(temp !=NULL)
@@ -60,12 +59,12 @@ void LinkStack::printStack() const
 }
 void LinkStack::push()
 {
-   Student *newNode =new Student();   
+   Student *newStudt =new Student();    // 
    cout<<"enter yor name : ";
-   cin>>newNode->name;
+   cin>>newStudt->name;
    cout<<"enter ID number : ";
-   cin>>newNode->id;
-   newNode->nextStudent=top;   //assign header to new nodes
-   top=newNode;   // move the header
+   cin>>newStudt->id;
+   newStudt->nextStudent=top;   //assign header to new nodes
+   top=newStudt;   // move the header
 
 }

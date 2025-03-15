@@ -1,12 +1,13 @@
 
 #include "stack.hpp"
-#include<cstdlib>
+#include<cstdlib>   //clear the console 
 int main()
 {
 	
 	int choice;
 	LinkStack stack1;
-	do{ cout<<"------------------------------------"<<endl;
+	do{ 
+		cout<<"------------------------------------"<<endl;
 		cout<<" 1. Add elements into stack(top)"<<endl;
 		cout<<" 2. Print the nodes in side stack "<<endl;
 		cout<<" 3. get top of node in side stack."<<endl;
