@@ -13,7 +13,7 @@ int main()
 		cout<<"4.get the top elem.\n";
 		cout<<"0.exit.\n";
 		cin>>choice;
-        cout<<system("clear");
+        cout<<system("clear");    //to clear the console 
       switch(choice)
       {
            case 1:
