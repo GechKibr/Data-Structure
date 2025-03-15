@@ -10,7 +10,7 @@ int main()
 		cout<<"1.Push elements into stack .\n";
 		cout<<"2.Pop elements from stack.\n";
 		cout<<"3.print stack elements .\n";
-		cout<<"4.get the top elem.\n";
+		cout<<"4.get the top elements.\n";
 		cout<<"0.exit.\n";
 		cin>>choice;
         cout<<system("clear");    //to clear the console 

@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-#define max 10
+#define max 10    //the maximum size of stack
 struct  Node
 {
 	string name;
