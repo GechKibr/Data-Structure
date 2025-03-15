@@ -26,7 +26,7 @@ public:
 };
   void Stack::getTop() const
 {
-	cout<<"\n the top element the stack is :"<<endl;
+	cout<<"\n the top element of the  stack is :"<<endl;
 	cout <<" name :"<<items[top].name<<endl;
 	cout<<"ID :"<<items[top].id<<endl;
 
@@ -81,13 +81,12 @@ void Stack::Pop()
 	else
 	{   
 		//Node popIteam;
-		cout<<" poped element "<<endl;
-		cout<<items[size].name<<"   "<<items[size].id<<endl;
+		cout<<" the deleted  element is "<<endl;
+		cout<<"Name :"<<items[size-1].name<<" ID :  "<<items[size-1].id<<endl;
 		top--;
 		size--;
 	}
 }
-
 
 void Stack::printStack()
 {
@@ -98,7 +97,8 @@ void Stack::printStack()
 
 
   else {
-		for(int i=size;i<=0;i--)
+	cout<<"\n the stack structure contains elements like this "<<endl;
+		for(int i=size-1;i>=0;i--)
 		{
 			cout<<endl<<items[i].name<<"   "<<items[i].id<<endl;
 	
