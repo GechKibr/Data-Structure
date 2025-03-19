@@ -1,0 +1,19 @@
+to change infix to prefix notation 
+
+step :
+    create stack (with pop ,push ,isEmpty ,isFull ,getTop) function
+    create fuction for incoming priority for operator
+    create function for in stack priority for operator
+    create function into post 
+        if  char = operand 
+          display
+        else if    char =operator
+             if ICP > ISP
+                push char
+             else 
+                pop() opreator and display
+                and push ICP OPREATOR
+                
+               
+             
+   
