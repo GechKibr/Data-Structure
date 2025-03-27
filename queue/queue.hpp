@@ -18,9 +18,17 @@ void enqueue(int num);
 void dequeue();
 int isEmpty();
 int isFull();
-//void peek();
+void getFront();
 void display();
 };
+void Myqueue::getFront()
+{
+  if(isEmpty())
+    cout<<"\n the is empty "<<endl;
+  else
+    cout<<"the front element: "<<items[front]<<endl;
+
+}
 void Myqueue::dequeue()
 {  
    
